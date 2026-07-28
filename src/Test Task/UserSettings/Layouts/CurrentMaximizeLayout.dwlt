@@ -26,7 +26,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 2982
+  controlID: 1942
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 2948
+  controlID: 1908
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -225,7 +225,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Scripts/Services
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -234,14 +235,15 @@ MonoBehaviour:
   m_StartGridSize: 16
   m_LastFolders: []
   m_LastFoldersGridSize: 62
-  m_LastProjectPath: C:\Users\111\Desktop\Test Task
+  m_LastProjectPath: C:\Users\111\Desktop\Arthur_Fatkhlislamov_Test_Task\src\Test
+    Task
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 00000000
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000006a0000026a0000046a0000066a0000086a00000a6a00000c6a00000e6a0000106a0000
+    m_ExpandedIDs: ffffffff000000004e68000050680000526800005468000056680000586800005a6800005c6800005e680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -267,9 +269,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2c730000
-    m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000006a0000026a0000046a0000066a0000086a00000a6a00000c6a00000e6a0000106a0000
+    m_SelectedIDs: a0510000
+    m_LastClickedID: 20896
+    m_ExpandedIDs: ffffffff000000004e68000050680000526800005468000056680000586800005a6800005c6800005e680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -294,8 +296,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 2c730000
-    m_LastClickedInstanceID: 29484
+    m_SelectedInstanceIDs: a0510000
+    m_LastClickedInstanceID: 20896
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -344,8 +346,8 @@ MonoBehaviour:
     y: 486
     width: 467
     height: 453
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 7}
   m_Panes:
   - {fileID: 7}
@@ -1019,8 +1021,8 @@ MonoBehaviour:
     y: 0
     width: 283
     height: 939
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -1063,9 +1065,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2c730000
-      m_LastClickedID: 29484
-      m_ExpandedIDs: 2ebfffff7ebfffff42c3ffff70cdffffc0cdffff46d1ffff76dbffffc6dbffff86dfffff86f0ffff
+      m_SelectedIDs: a0510000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 26f3ffff76f3ffff32f7ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1081,7 +1083,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 4}
+        m_ClientGUIView: {fileID: 11}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1108,8 +1110,8 @@ MonoBehaviour:
     y: 0
     width: 461
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}

@@ -18,6 +18,8 @@ namespace Scripts.Network
 
         public override void Awake()
         {
+            base.Awake();
+
             Debug.Log("NetworkManager Awake");
         }
 
@@ -29,6 +31,39 @@ namespace Scripts.Network
                 OnSubscribeMessageReceived);
 
             Debug.Log("Server started.");
+        }
+
+        public override void OnStartClient()
+        {
+            base.OnStartClient();
+
+            NetworkClient.RegisterHandler<HelloMessage>(
+                OnHelloMessageReceived);
+
+            Debug.Log("Client started.");
+        }
+
+        public override void OnStartHost()
+        {
+            base.OnStartHost();
+
+            Debug.Log("Host started.");
+        }
+
+        public override void OnClientConnect()
+        {
+            Debug.Log(">>> OnClientConnect ENTER");
+
+            base.OnClientConnect();
+
+            Debug.Log(">>> after OnClientConnect");
+
+            NetworkClient.Send(new SubscribeMessage
+            {
+                MessageType = nameof(HelloMessage)
+            });
+
+            Debug.Log(">>> Subscribe message sent!");
         }
 
         public override void OnServerDisconnect(
@@ -54,6 +89,11 @@ namespace Scripts.Network
                 {
                     Text = $"Hello Client!"
                 });
+        }
+
+        private void OnHelloMessageReceived(HelloMessage message)
+        {
+            Debug.Log(message.Text);
         }
     }
 }

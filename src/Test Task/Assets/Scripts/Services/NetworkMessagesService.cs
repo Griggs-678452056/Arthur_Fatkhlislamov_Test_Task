@@ -12,7 +12,7 @@ namespace Scripts.Services
             NetworkConnectionToClient connection,
             string messageType)
         {
-            if (_subscriptions.TryGetValue(connection, out var types))
+            if (!_subscriptions.TryGetValue(connection, out var types))
             {
                 types = new HashSet<string>();
 
