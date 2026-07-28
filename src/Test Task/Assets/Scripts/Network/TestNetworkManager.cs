@@ -52,18 +52,16 @@ namespace Scripts.Network
 
         public override void OnClientConnect()
         {
-            Debug.Log(">>> OnClientConnect ENTER");
-
             base.OnClientConnect();
 
-            Debug.Log(">>> after OnClientConnect");
+            Debug.Log("Client connected.");
 
             NetworkClient.Send(new SubscribeMessage
             {
                 MessageType = nameof(HelloMessage)
             });
 
-            Debug.Log(">>> Subscribe message sent!");
+            Debug.Log("Subscription sent.");
         }
 
         public override void OnServerDisconnect(
