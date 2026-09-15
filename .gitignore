@@ -9,7 +9,7 @@
 /src/Test Task/[Bb]uild/
 /src/Test Task/[Bb]uilds/
 /src/Test Task/[Ll]ogs/
-/src/Test Task//[Uu]ser[Ss]ettings/
+/src/Test Task/[Uu]ser[Ss]ettings/
 *.log
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
